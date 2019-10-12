@@ -247,7 +247,7 @@
                 
               
 
-              <time title="创建时间：2019-10-12 09:22:00 / 修改时间：10:52:26" itemprop="dateCreated datePublished" datetime="2019-10-12T09:22:00+08:00">2019-10-12</time>
+              <time title="创建时间：2019-10-12 09:22:00 / 修改时间：11:04:47" itemprop="dateCreated datePublished" datetime="2019-10-12T09:22:00+08:00">2019-10-12</time>
             </span>
           
             
@@ -274,7 +274,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/%E7%AE%80%E4%BB%8B.jpg" alt></p><h1 id="讲座大纲"><a href="#讲座大纲" class="headerlink" title="讲座大纲"></a>讲座大纲</h1><p>　　* Landslide and debris flow<br>　　* From FEM to …<br>　　* SPH, MPM, CFD+DEM<br>　　* Constitutive model<br>　　* Outlook</p><h1 id="要点总结"><a href="#要点总结" class="headerlink" title="要点总结"></a>要点总结</h1><p>　　1.<strong>为什么要引入SPH方法和MPM方法？</strong><br>　　由于FEM的计算网格随着对象的变形而变形，这就使得在处理大变形问题时，容易发生网格畸变等问题（雅克比矩阵奇异），使得计算困难。那么为了避免网格畸变带来问题，就有了基于质点的方法，也就是SPH方法和MPM方法<br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/SPH.png" alt="SPH"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/MPM.png" alt="MPM"><br>　　2.<strong>一种measure viscosity的仪器</strong><br>　　优点是便于追踪测定，有点像是滚筒洗衣机<br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/convention.png" alt="convention"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/Rotatingdrum.png" alt="Rotating drum"><br>　　3.<strong>Constitutive model with phase transition</strong><br>　　准静态的本构往往是rate-independent，而inertial regime往往是strong rate-dependent，相应的前者的本构关系往往是增量之间的关系（应力增量和应变增量），而后者的本构关系是应力全量和应变增量之间的关系（最简单的就是牛顿流体的公式），那么这样的两种不同的phase的特性如何利用一个统一的公式去描述呢?<br>　　吴伟教授给出的方案是利用分解应力的方法，将应力分解为独立的两个部分，即rate-dependent和rate-independent部分，二者相互独立，但他们的和一定要满足平衡方程。<br>　　貌似模拟这样模拟做出来的结果还不错，感兴趣的可以去看看这篇文章<em>Peng et al. Acta Geotechnica,2016</em><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/phasechange.png" alt="phasechange"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/assumption.png" alt="assumption"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/ratedependen.png" alt="ratedependent"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/rateindependent.png" alt="rateindependent"></p>
+          <p><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/%E7%AE%80%E4%BB%8B.jpg" alt></p><h1 id="讲座大纲"><a href="#讲座大纲" class="headerlink" title="讲座大纲"></a>讲座大纲</h1><p>　　* Landslide and debris flow<br>　　* From FEM to …<br>　　* SPH, MPM, CFD+DEM<br>　　* Constitutive model<br>　　* Outlook</p><h1 id="要点总结"><a href="#要点总结" class="headerlink" title="要点总结"></a>要点总结</h1><p>　　1.<strong>为什么要引入SPH方法和MPM方法？</strong><br>　　由于FEM的计算网格随着对象的变形而变形，这就使得在处理大变形问题时，容易发生网格畸变等问题（雅克比矩阵奇异），使得计算困难。那么为了避免网格畸变带来问题，就有了基于质点的方法，也就是SPH方法和MPM方法<br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/SPH.png" alt="SPH"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/MPM.png" alt="MPM"><br>　　2.<strong>一种measure viscosity的仪器</strong><br>　　优点是便于追踪测定，有点像是滚筒洗衣机<br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/convention.png" alt="convention"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/R1.png" alt><br>　　3.<strong>Constitutive model with phase transition</strong><br>　　准静态的本构往往是rate-independent，而inertial regime往往是strong rate-dependent，相应的前者的本构关系往往是增量之间的关系（应力增量和应变增量），而后者的本构关系是应力全量和应变增量之间的关系（最简单的就是牛顿流体的公式），那么这样的两种不同的phase的特性如何利用一个统一的公式去描述呢?<br>　　吴伟教授给出的方案是利用分解应力的方法，将应力分解为独立的两个部分，即rate-dependent和rate-independent部分，二者相互独立，但他们的和一定要满足平衡方程。<br>　　貌似模拟这样模拟做出来的结果还不错，感兴趣的可以去看看这篇文章<em>Peng et al. Acta Geotechnica,2016</em><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/phasechange.png" alt="phasechange"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/assumption.png" alt="assumption"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/R2.png" alt><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/rateindependent.png" alt="rateindependent"></p>
           <!--noindex-->
           
             <div class="post-button">
@@ -372,41 +372,15 @@
 
       
           <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Hello-Hexxxx"><a href="#Hello-Hexxxx" class="headerlink" title="Hello Hexxxx"></a>Hello Hexxxx</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><hr>
-<p><strong>加粗</strong></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int i=<span class="number">0</span>;</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://space.bilibili.com/244126474" target="_blank" rel="noopener">引垂思汀</a></p>
-<table>
-<thead>
-<tr>
-<th align="center">表头</th>
-<th align="left">表头</th>
-<th align="right">表头</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">内容</td>
-<td align="left">内容</td>
-<td align="right">内容</td>
-</tr>
-<tr>
-<td align="center">内容</td>
-<td align="left">内容</td>
-<td align="right">内容</td>
-</tr>
-<tr>
-<td align="center">内容</td>
-<td align="left">内容</td>
-<td align="right">内容</td>
-</tr>
-<tr>
-<td align="center">我想在文字中加</td>
-<td align="left"></td>
-<td align="right"></td>
-</tr>
-</tbody></table>
-
+          <!--noindex-->
+          
+            <div class="post-button">
+              <a class="btn" href="/2019/10/10/try/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>
@@ -486,7 +460,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Hello-Hexxxx"><a href="#Hello-Hexxxx" class="headerlink" title="Hello Hexxxx"></a>Hello Hexxxx</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
           <!--noindex-->
           
             <div class="post-button">

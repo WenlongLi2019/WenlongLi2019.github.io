@@ -66,12 +66,12 @@
 <meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/SPH.png">
 <meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/MPM.png">
 <meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/convention.png">
-<meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/Rotatingdrum.png">
+<meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/R1.png">
 <meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/phasechange.png">
 <meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/assumption.png">
-<meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/ratedependen.png">
+<meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/R2.png">
 <meta property="og:image" content="https://wenlongli2019.github.io/2019/10/12/吴伟讲座/rateindependent.png">
-<meta property="og:updated_time" content="2019-10-12T02:52:26.706Z">
+<meta property="og:updated_time" content="2019-10-12T03:04:47.333Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="吴伟讲座">
 <meta name="twitter:description" content="讲座大纲　　* Landslide and debris flow　　* From FEM to …　　* SPH, MPM, CFD+DEM　　* Constitutive model　　* Outlook要点总结　　1.为什么要引入SPH方法和MPM方法？　　由于FEM的计算网格随着对象的变形而变形，这就使得在处理大变形问题时，容易发生网格畸变等问题（雅克比矩阵奇异），使得计算困难。那么为了避">
@@ -258,7 +258,7 @@
                 
               
 
-              <time title="创建时间：2019-10-12 09:22:00 / 修改时间：10:52:26" itemprop="dateCreated datePublished" datetime="2019-10-12T09:22:00+08:00">2019-10-12</time>
+              <time title="创建时间：2019-10-12 09:22:00 / 修改时间：11:04:47" itemprop="dateCreated datePublished" datetime="2019-10-12T09:22:00+08:00">2019-10-12</time>
             </span>
           
             
@@ -293,7 +293,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/%E7%AE%80%E4%BB%8B.jpg" alt></p><h1 id="讲座大纲"><a href="#讲座大纲" class="headerlink" title="讲座大纲"></a>讲座大纲</h1><p>　　* Landslide and debris flow<br>　　* From FEM to …<br>　　* SPH, MPM, CFD+DEM<br>　　* Constitutive model<br>　　* Outlook</p><h1 id="要点总结"><a href="#要点总结" class="headerlink" title="要点总结"></a>要点总结</h1><p>　　1.<strong>为什么要引入SPH方法和MPM方法？</strong><br>　　由于FEM的计算网格随着对象的变形而变形，这就使得在处理大变形问题时，容易发生网格畸变等问题（雅克比矩阵奇异），使得计算困难。那么为了避免网格畸变带来问题，就有了基于质点的方法，也就是SPH方法和MPM方法<br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/SPH.png" alt="SPH"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/MPM.png" alt="MPM"><br>　　2.<strong>一种measure viscosity的仪器</strong><br>　　优点是便于追踪测定，有点像是滚筒洗衣机<br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/convention.png" alt="convention"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/Rotatingdrum.png" alt="Rotating drum"><br>　　3.<strong>Constitutive model with phase transition</strong><br>　　准静态的本构往往是rate-independent，而inertial regime往往是strong rate-dependent，相应的前者的本构关系往往是增量之间的关系（应力增量和应变增量），而后者的本构关系是应力全量和应变增量之间的关系（最简单的就是牛顿流体的公式），那么这样的两种不同的phase的特性如何利用一个统一的公式去描述呢?<br>　　吴伟教授给出的方案是利用分解应力的方法，将应力分解为独立的两个部分，即rate-dependent和rate-independent部分，二者相互独立，但他们的和一定要满足平衡方程。<br>　　貌似模拟这样模拟做出来的结果还不错，感兴趣的可以去看看这篇文章<em>Peng et al. Acta Geotechnica,2016</em><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/phasechange.png" alt="phasechange"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/assumption.png" alt="assumption"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/ratedependen.png" alt="ratedependent"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/rateindependent.png" alt="rateindependent"></p><a id="more"></a>
+        <p><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/%E7%AE%80%E4%BB%8B.jpg" alt></p><h1 id="讲座大纲"><a href="#讲座大纲" class="headerlink" title="讲座大纲"></a>讲座大纲</h1><p>　　* Landslide and debris flow<br>　　* From FEM to …<br>　　* SPH, MPM, CFD+DEM<br>　　* Constitutive model<br>　　* Outlook</p><h1 id="要点总结"><a href="#要点总结" class="headerlink" title="要点总结"></a>要点总结</h1><p>　　1.<strong>为什么要引入SPH方法和MPM方法？</strong><br>　　由于FEM的计算网格随着对象的变形而变形，这就使得在处理大变形问题时，容易发生网格畸变等问题（雅克比矩阵奇异），使得计算困难。那么为了避免网格畸变带来问题，就有了基于质点的方法，也就是SPH方法和MPM方法<br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/SPH.png" alt="SPH"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/MPM.png" alt="MPM"><br>　　2.<strong>一种measure viscosity的仪器</strong><br>　　优点是便于追踪测定，有点像是滚筒洗衣机<br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/convention.png" alt="convention"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/R1.png" alt><br>　　3.<strong>Constitutive model with phase transition</strong><br>　　准静态的本构往往是rate-independent，而inertial regime往往是strong rate-dependent，相应的前者的本构关系往往是增量之间的关系（应力增量和应变增量），而后者的本构关系是应力全量和应变增量之间的关系（最简单的就是牛顿流体的公式），那么这样的两种不同的phase的特性如何利用一个统一的公式去描述呢?<br>　　吴伟教授给出的方案是利用分解应力的方法，将应力分解为独立的两个部分，即rate-dependent和rate-independent部分，二者相互独立，但他们的和一定要满足平衡方程。<br>　　貌似模拟这样模拟做出来的结果还不错，感兴趣的可以去看看这篇文章<em>Peng et al. Acta Geotechnica,2016</em><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/phasechange.png" alt="phasechange"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/assumption.png" alt="assumption"><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/R2.png" alt><br><img src="//WenlongLi2019.github.io/2019/10/12/吴伟讲座/rateindependent.png" alt="rateindependent"></p><a id="more"></a>
 
 
 <p>　　4.<strong>关于本构关系和数值计算的问题</strong><br>　　吴教授和其他教授都提到，即使是用非常复杂的模型和简单的模型来计算同一问题，其对于模拟的结果的改善并不是十分明显，好像是由于某种中和效应，具体的我也不太懂</p>
