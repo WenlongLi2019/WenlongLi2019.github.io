@@ -251,7 +251,7 @@
                 
               
 
-              <time title="创建时间：2019-10-24 11:50:49 / 修改时间：13:11:47" itemprop="dateCreated datePublished" datetime="2019-10-24T11:50:49+08:00">2019-10-24</time>
+              <time title="创建时间：2019-10-24 11:50:49 / 修改时间：16:54:34" itemprop="dateCreated datePublished" datetime="2019-10-24T11:50:49+08:00">2019-10-24</time>
             </span>
           
             
@@ -283,8 +283,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>为<br><object data="./王浩博士讲座/test" type="application/pdf" width="100%" height="877px"></object></p>
-
+          <p>为</p>
+<div class="pdf" target="/王浩博士讲座/test.pdf" height></div>
         
       
     </div>
@@ -1283,6 +1283,25 @@
 
 
 
+<script>
+if (document.querySelectorAll('div.pdf').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/pdfobject@2/pdfobject.min.js', () => {
+    document.querySelectorAll('div.pdf').forEach(element => {
+      PDFObject.embed(element.getAttribute('target'), element, {
+        pdfOpenParams: {
+          navpanes: 0,
+          toolbar: 0,
+          statusbar: 0,
+          pagemode: 'thumbs',
+          view: 'FitH'
+        },
+        PDFJS_URL: '/lib/pdf/web/viewer.html',
+        height: element.getAttribute('height') || '500px'
+      });
+    });
+  }, window.PDFObject);
+}
+</script>
 
 
 
